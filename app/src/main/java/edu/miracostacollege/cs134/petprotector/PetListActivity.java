@@ -26,7 +26,7 @@ import java.util.List;
 import edu.miracostacollege.cs134.petprotector.model.DBHelper;
 import edu.miracostacollege.cs134.petprotector.model.Pet;
 
-public class MainActivity extends AppCompatActivity {
+public class PetListActivity extends AppCompatActivity {
 
     private ImageView petImageView ;
     private Uri currentImage ;
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_pet_list);
 
         // Wire up the view with the layout.
         petImageView = findViewById(R.id.petImageView) ;
