@@ -21,8 +21,6 @@ public class PetListAdapter extends ArrayAdapter<Pet> {
     private List<Pet> mPetsList;
     private int mResourceId;
 
-
-
     /**
      * Creates a new <code>PetListAdapter</code> given a mContext, resource id and list of Pets.
      *
