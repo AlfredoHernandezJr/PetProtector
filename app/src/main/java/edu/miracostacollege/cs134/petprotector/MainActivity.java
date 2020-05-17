@@ -89,8 +89,15 @@ public class MainActivity extends AppCompatActivity {
         nameEditText.setText("") ;
         detailsEditText.setText("") ;
         phoneEditText.setText("") ;
+
+        currentImage = getUriToResource(this, R.drawable.none) ;
+        petImageView.setImageURI(currentImage) ;
     }
 
+    /**
+     * Sends the information from the list_item over to the pet_details
+     * @param v Current activity
+     */
     public void viewPetDetails(View v)
     {
         Pet selectedPet = (Pet) v.getTag() ;

@@ -51,6 +51,10 @@ public class DBHelper extends SQLiteOpenHelper {
 
     //********** DATABASE OPERATIONS:  ADD, UPDATE, EDIT, DELETE
 
+    /**
+     * Adds a new Pet to the Db
+     * @param pet current pet
+     */
     public void addPet(Pet pet) {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -76,6 +80,10 @@ public class DBHelper extends SQLiteOpenHelper {
         db.close();
     }
 
+    /**
+     * Returns all of the Pets in the DB
+     * @return List of pets
+     */
     public List<Pet> getAllPets() {
         List<Pet> petList = new ArrayList<>();
         SQLiteDatabase database = getReadableDatabase();
